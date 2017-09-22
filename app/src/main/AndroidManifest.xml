@@ -15,8 +15,8 @@
         <activity
             android:name=".WebviewLayoutActivity"
             android:label="@string/title_activity_webview_layout"
-            android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
+            android:theme="@style/AppTheme.NoActionBar"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHE" />

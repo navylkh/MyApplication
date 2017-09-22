@@ -2,5 +2,12 @@
 <html>
 <body>
 Hello, 마이크!
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        android.showToast(toast);
+    }
+</script>
 </body>
 </html>
