@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.chad.myapplication">
-    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing"
+
+    <meta-data
+        android:name="android.webkit.WebView.EnableSafeBrowsing"
         android:value="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,21 +17,40 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".WebviewLayoutActivity"
-            android:label="@string/title_activity_webview_layout"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_webview_layout">
             android:theme="@style/AppTheme.NoActionBar"
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHE" />
             </intent-filter>
-            <!--Default Activity not found 에러가 나는 경우 - 프로젝트 생성시 main activity를 지정해주지 않은 경우
-            이런 에러가 날 수 있다. Run - Edit Configurations - Android App - app에서 액티비티를 지정해준다.-->
-           <!-- <intent-filter>
+            -->
+            <!--
+            Default Activity not found 에러가 나는 경우 - 프로젝트 생성시 main activity를 지정해주지 않은 경우
+            이런 에러가 날 수 있다. Run - Edit Configurations - Android App - app에서 액티비티를 지정해준다.
+            -->
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            android:theme="@style/AppTheme.NoActionBar"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activity 추가 -->
+        <activity android:name=".DetailActivity" />
     </application>
 
 </manifest>
