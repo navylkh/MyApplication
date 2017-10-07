@@ -1,6 +1,7 @@
 package com.example.chad.myapplication;
 
 import android.content.Intent;
+import android.drm.DrmUtils;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         MyContents.add("Custom ListView");
         MyContents.add("Webview Layout");
         MyContents.add("Recycler View");
-        MyContents.add("4번 내용");
+        MyContents.add("ExpandableList with Recycler View");
 
         // 아래는 어댑터 준비 과정입니다.
         // 어댑터란? 데이터는 어댑터를 거쳐서 리스트뷰에 표시됩니다.
@@ -81,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 2 : {
                         Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                        startActivity(intent);
+                    }
+                    case 3 : {
+                        Intent intent = new Intent(MainActivity.this, ExpandableListActivity.class);
                         startActivity(intent);
                     }
                     break;
