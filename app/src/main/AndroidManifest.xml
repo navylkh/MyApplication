@@ -43,10 +43,12 @@
             android:name=".ListActivity"
             android:label="ListActivity">
             android:theme="@style/AppTheme.NoActionBar"
-            <!--<intent-filter>
+            <!--
+            <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <!-- Activity 추가 -->
         <activity android:name=".DetailActivity" />
@@ -60,6 +62,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RecyclerActivity"></activity>
     </application>
 
 </manifest>

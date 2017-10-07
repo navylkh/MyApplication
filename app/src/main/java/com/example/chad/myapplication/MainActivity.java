@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> MyContents = new ArrayList<String>();
         MyContents.add("Custom ListView");
         MyContents.add("Webview Layout");
-        MyContents.add("3번 내용");
+        MyContents.add("Recycler View");
         MyContents.add("4번 내용");
 
         // 아래는 어댑터 준비 과정입니다.
@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                         break;
+                    case 2 : {
+                        Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                        startActivity(intent);
+                    }
+                    break;
 
                 }
             }
